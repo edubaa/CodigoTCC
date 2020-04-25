@@ -23,12 +23,19 @@ public class Robot : MonoBehaviour
         //função ForceAtPosition
         if (Input.GetKey(KeyCode.A))
          {
-            rb.AddForceAtPosition(re.transform.position,re.transform.forward*v); 
+            //rb.AddForceAtPosition(re.transform.forward , re.transform.position * v, ForceMode2D.Force );
+
+            rb.AddForceAtPosition(re.transform.forward * v, re.transform.position );
+            
+            // rb.AddForceAtPosition(re.transform.position,rb.transform.forward*v);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForceAtPosition(rd.transform.position,rd.transform.forward * v);
+            //rb.AddForceAtPosition(re.transform.forward , rd.transform.position * v, ForceMode2D.Force );
+
+            rb.AddForceAtPosition(re.transform.forward * v, rd.transform.position );
           
+            //rb.AddForceAtPosition(rd.transform.position, rb.transform.forward * v);
         }
     }
 }
