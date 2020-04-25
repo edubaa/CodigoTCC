@@ -33,7 +33,7 @@ public class Robot : MonoBehaviour
         {
             //rb.AddForceAtPosition(re.transform.forward , rd.transform.position * v, ForceMode2D.Force );
 
-            rb.AddForceAtPosition(re.transform.forward * v, rd.transform.position );
+            rb.AddForceAtPosition(rd.transform.forward * v, rd.transform.position );
           
             //rb.AddForceAtPosition(rd.transform.position, rb.transform.forward * v);
         }
