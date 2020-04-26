@@ -25,17 +25,17 @@ public class Robot : MonoBehaviour
          {
             //rb.AddForceAtPosition(re.transform.forward , re.transform.position * v, ForceMode2D.Force );
 
-            rb.AddForceAtPosition(re.transform.forward * v, re.transform.position );
+            //rb.AddForceAtPosition(re.transform.forward * 1.0f, re.transform.position );
             
-            // rb.AddForceAtPosition(re.transform.position,rb.transform.forward*v);
+             rb.AddForceAtPosition(rb.transform.up * 10.0f, transform.position);
         }
         if (Input.GetKey(KeyCode.D))
         {
             //rb.AddForceAtPosition(re.transform.forward , rd.transform.position * v, ForceMode2D.Force );
 
-            rb.AddForceAtPosition(rd.transform.forward * v, rd.transform.position );
+            //rb.AddForceAtPosition(rd.transform.forward * 1.0f, rd.transform.position );
           
-            //rb.AddForceAtPosition(rd.transform.position, rb.transform.forward * v);
+            rb.AddForceAtPosition(rb.transform.up * 10.0f, rd.transform.position);
         }
     }
 }
